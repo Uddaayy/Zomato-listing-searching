@@ -14,8 +14,7 @@ const RestaurantList = () => {
     // Simulated API call - replace with your actual API endpoint
     const fetchRestaurants = async () => {
       try {
-        const response = await fetch('https://zomato-listing-searching.onrender.com/restaurants');
-
+        const response = await fetch('https://api.example.com/restaurants');
         const data = await response.json();
         setRestaurants(data);
       } catch (error) {

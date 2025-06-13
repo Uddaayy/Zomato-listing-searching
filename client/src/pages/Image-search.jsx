@@ -41,10 +41,10 @@ const ImageSearch = () => {
       const formData = new FormData();
       formData.append("image", image);
 
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/restaurants/image-search`, {
-  method: "POST",
-  body: formData,
-});
+      const response = await fetch("https://api.example.com/restaurants/image-search", {
+        method: "POST",
+        body: formData,
+      });
 
       if (!response.ok) {
         throw new Error('Failed to search restaurants');

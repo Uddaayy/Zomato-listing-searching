@@ -25,9 +25,8 @@ const NameSearch = () => {
       setError(null);
       try {
         const response = await fetch(
-  `https://zomato-listing-searching.onrender.com/namesearch?name=${encodeURIComponent(searchName)}`
-);
-
+          `https://restaurant-finder-0in9.onrender.com/namesearch?name=${encodeURIComponent(searchName)}`
+        );
 
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
