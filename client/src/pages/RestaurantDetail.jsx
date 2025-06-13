@@ -12,7 +12,7 @@ const RestaurantDetail = () => {
   useEffect(() => {
     const fetchRestaurant = async () => {
       try {
-        const response = await fetch(`https://api.example.com/restaurants/${id}`);
+        const response = await fetch(`https://zomato-listing-searching.onrender.com/restaurants/${id}`);
         const data = await response.json();
         setRestaurant(data);
       } catch (error) {
